@@ -5,8 +5,7 @@ import kotlin.math.abs
      private var year = _year
      private var month = _month
      private var day = _day
-
-
+  
     fun isLeapYear (): Boolean = (year>0 && (year%4==0) )
 
     fun monthDays (): Int? {
@@ -61,8 +60,7 @@ fun main() {
     var day: Int
     var month: Int
     var year: Int
-
-
+ 
     println("Enter the year:")
     year = scan.nextInt()
     println("Enter the month:")
