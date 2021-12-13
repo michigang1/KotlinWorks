@@ -1,6 +1,6 @@
-fun  List<Int>.sum(list: List<Int> ): Int {
+fun  List<Int>.sum(): Int {
   var result = 0;
-    for (i in list) {
+    for (i in this) {
         result += i
     }
     return result
