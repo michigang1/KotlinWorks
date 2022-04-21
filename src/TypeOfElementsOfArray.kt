@@ -14,20 +14,24 @@ fun List<Any?>.amountOfElementsByType(): AmountOfElementsOfArrayByType {
         val amountOfChar = this.count { it is Char }
         val amountOfString = this.count { it is String }
     
-  return AmountOfElementsOfArrayByType(amountOfNull,amountOfInt,amountOfDouble,amountOfChar,amountOfString)
+        return AmountOfElementsOfArrayByType(
+            amountOfNull,
+            amountOfInt,
+            amountOfDouble,
+            amountOfChar,
+            amountOfString)
 }
-fun AmountOfElementsOfArrayByType.printAmountOfElementsByType(){
-    println("Int - ${this.amountOfInt}" +
-            "Double - ${this.amountOfDouble}" +
-            "Char - ${this.amountOfChar}" +
-            "String - ${this.amountOfString}" +
-            "Null - ${this.amountOfNull}")
+fun AmountOfElementsOfArrayByType.printlnAmountOfElementsByType(){
+    println("\nInt - ${this.amountOfInt}" +
+            "\nDouble - ${this.amountOfDouble}" +
+            "\nChar - ${this.amountOfChar}" +
+            "\nString - ${this.amountOfString}" +
+            "\nNull - ${this.amountOfNull}")
 }
 fun main(){
     val array = listOf('a','b','c', 1, 2, 3, 4, 5, 2.7, 3.14, "UA", "John Lennon", null, null)
     val amountOfElementsByType = array.amountOfElementsByType()
-    amountOfElementsByType.printAmountOfElementsByType()
-    
+    amountOfElementsByType.printlnAmountOfElementsByType()
 }
 
 
